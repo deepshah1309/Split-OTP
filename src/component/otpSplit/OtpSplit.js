@@ -3,7 +3,7 @@ const OtpSplit=()=>{
     const keydown=(e,previous)=> {
         
         const key = e.key; 
-if (key === "Backspace" ) {
+if (key === "Backspace" ||  key==="Delete") {
     e.target.value="";
     document.getElementById(previous).focus();
 }
